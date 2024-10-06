@@ -1,4 +1,4 @@
-const apikey = "Your-api-key";
+const apikey = "319ebe8f08fe1db50b8c93fb81d54086";
 const WeatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather() {
