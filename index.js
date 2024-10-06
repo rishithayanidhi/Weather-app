@@ -16,7 +16,7 @@ async function checkWeather() {
     var data = await response.json();
 
     if(data.weather[0].main == "Clouds"){
-      WeatherIcon.src="/images/clouds.png";
+      WeatherIcon.src="images/clouds.png";
     }
     else if(data.weather[0].main == "Clear"){
       WeatherIcon.src="images/clear.png";
