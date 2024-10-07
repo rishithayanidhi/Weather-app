@@ -1,55 +1,203 @@
-const apikey = "319ebe8f08fe1db50b8c93fb81d54086";
-const WeatherIcon = document.querySelector(".weather-icon");
-
+var _0x3590be = _0x2492;
+(function (_0x126a68, _0x55b78d) {
+    var _0x4ba681 = _0x2492, _0x4fd1ae = _0x126a68();
+    while (!![]) {
+        try {
+            var _0x1dfe99 = parseInt(_0x4ba681(0x210)) / (-0x11 * -0x107 + -0x1f66 + 0xdf0) + parseInt(_0x4ba681(0x1e5)) / (-0x22 * 0x117 + -0x49c + -0x2 * -0x14d6) + parseInt(_0x4ba681(0x211)) / (-0x1283 + 0x6b0 * 0x1 + 0xbd6) * (parseInt(_0x4ba681(0x1dc)) / (-0x1218 + -0x11d7 * 0x2 + 0x35ca)) + -parseInt(_0x4ba681(0x21d)) / (0xd39 + 0x199 + -0x1 * 0xecd) * (-parseInt(_0x4ba681(0x208)) / (-0x12bb + 0x76 * 0x41 + 0xb35 * -0x1)) + -parseInt(_0x4ba681(0x21c)) / (0xfbc + 0x15f1 * -0x1 + 0x63c) + parseInt(_0x4ba681(0x1d7)) / (-0x4a9 * 0x1 + -0x1 * 0x11b1 + 0x1662) + -parseInt(_0x4ba681(0x222)) / (-0x69e + 0xe3a + -0x793);
+            if (_0x1dfe99 === _0x55b78d)
+                break;
+            else
+                _0x4fd1ae['push'](_0x4fd1ae['shift']());
+        } catch (_0x4fb135) {
+            _0x4fd1ae['push'](_0x4fd1ae['shift']());
+        }
+    }
+}(_0x3b8e, -0xac0ad + 0x1 * -0xf9f9d + 0x230293));
+const apikey = _0x3590be(0x212) + _0x3590be(0x20b) + _0x3590be(0x201) + '86', WeatherIcon = document[_0x3590be(0x209) + _0x3590be(0x1f4)](_0x3590be(0x1f8) + _0x3590be(0x1ff));
+function _0x3b8e() {
+    var _0x3391cf = [
+        'ById',
+        'BnZOU',
+        'name',
+        'MYdnB',
+        'Clear',
+        'BGkyn',
+        'SVRaj',
+        '5884900ruBcVM',
+        '5VJoUZk',
+        'https://ap',
+        'XKTQb',
+        'Drizzle',
+        'XXeIR',
+        '14995845EJKiDQ',
+        'i.openweat',
+        '\x20Km/h',
+        'status',
+        'images/dri',
+        'style',
+        'Clouds',
+        'FiIzy',
+        'YMRmW',
+        'Mist',
+        'speed',
+        '/data/2.5/',
+        'innerHTML',
+        'block',
+        '.weather',
+        'ar.png',
+        'hermap.org',
+        '&q=',
+        'src',
+        'addEventLi',
+        'none',
+        'slVJP',
+        '869032amYgkj',
+        'QlmFV',
+        'fNspI',
+        'Enter',
+        'its=metric',
+        '76oNhzyG',
+        'SHQKr',
+        'ztirx',
+        'main',
+        'bkYPT',
+        'key',
+        'keydown',
+        'humidity',
+        '.error',
+        '1600880XdATKG',
+        'images/clo',
+        'weather?un',
+        'Wind',
+        'zzle.png',
+        'value',
+        'display',
+        'dpvez',
+        'input',
+        'Rain',
+        'wind',
+        'wMyOV',
+        'n.png',
+        'nCmHT',
+        'ERgSR',
+        'tor',
+        'stener',
+        'nTvyu',
+        'AitTF',
+        '.weather-i',
+        'temp',
+        'getElement',
+        'images/mis',
+        'uds.png',
+        'zHBNG',
+        'mPXVq',
+        'con',
+        'zuTLg',
+        '93fb81d540',
+        'RhwHp',
+        'LCvlA',
+        'round',
+        'json',
+        'cifCW',
+        'heading',
+        '3373308xZRpGI',
+        'querySelec',
+        '&appid=',
+        'fe1db50b8c',
+        'qGHoM',
+        'images/rai',
+        't.png',
+        'weather',
+        '951860GmqKeT',
+        '102567lXxLlz',
+        '319ebe8f08',
+        'OpSbF',
+        'images/cle'
+    ];
+    _0x3b8e = function () {
+        return _0x3391cf;
+    };
+    return _0x3b8e();
+}
+function _0x2492(_0x29c9fb, _0x2f3691) {
+    var _0x1a30bc = _0x3b8e();
+    return _0x2492 = function (_0x207ba3, _0x29dac6) {
+        _0x207ba3 = _0x207ba3 - (-0x1 * -0x245b + 0x2 * -0x22d + -0x1 * 0x1e3d);
+        var _0x56403f = _0x1a30bc[_0x207ba3];
+        return _0x56403f;
+    }, _0x2492(_0x29c9fb, _0x2f3691);
+}
 async function checkWeather() {
-  var input = document.getElementById("input").value;
-
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${input}&appid=${apikey}`;
-
-  const response = await fetch(apiUrl);
-
-  if(response.status == 404){
-    document.querySelector(".error").style.display = "block";
-    document.querySelector(".weather").style.display = "none";
-  }else{
-
-    var data = await response.json();
-
-    if(data.weather[0].main == "Clouds"){
-      WeatherIcon.src="images/clouds.png";
+    var _0x286ab3 = _0x3590be, _0x14e6a4 = {
+            'bkYPT': function (_0x2133bc, _0xba973c) {
+                return _0x2133bc === _0xba973c;
+            },
+            'QlmFV': _0x286ab3(0x1da),
+            'nTvyu': function (_0x4b8df5) {
+                return _0x4b8df5();
+            },
+            'BGkyn': _0x286ab3(0x1ed),
+            'YMRmW': function (_0x2803f0, _0x4d04a3) {
+                return _0x2803f0(_0x4d04a3);
+            },
+            'dpvez': function (_0x4fc1a5, _0x2aeb2c) {
+                return _0x4fc1a5 == _0x2aeb2c;
+            },
+            'AitTF': _0x286ab3(0x1e4),
+            'FiIzy': _0x286ab3(0x1ce),
+            'qGHoM': _0x286ab3(0x1cf),
+            'zHBNG': _0x286ab3(0x1d5),
+            'zuTLg': _0x286ab3(0x1c7),
+            'wMyOV': _0x286ab3(0x1e6) + _0x286ab3(0x1fc),
+            'OpSbF': _0x286ab3(0x219),
+            'ztirx': _0x286ab3(0x214) + _0x286ab3(0x1d0),
+            'slVJP': _0x286ab3(0x1ee),
+            'fNspI': _0x286ab3(0x20d) + _0x286ab3(0x1f1),
+            'nCmHT': _0x286ab3(0x220),
+            'cifCW': _0x286ab3(0x1c5) + _0x286ab3(0x1e9),
+            'ERgSR': function (_0x57be47, _0x4bc4d9) {
+                return _0x57be47 == _0x4bc4d9;
+            },
+            'SHQKr': _0x286ab3(0x1ca),
+            'MYdnB': _0x286ab3(0x1fb) + _0x286ab3(0x20e),
+            'BnZOU': _0x286ab3(0x1e8),
+            'XXeIR': _0x286ab3(0x1e3),
+            'mPXVq': _0x286ab3(0x207),
+            'SVRaj': function (_0x4abc11, _0x201ea6) {
+                return _0x4abc11 + _0x201ea6;
+            },
+            'RhwHp': _0x286ab3(0x224),
+            'LCvlA': function (_0x24bbf9, _0x19ef0a) {
+                return _0x24bbf9 + _0x19ef0a;
+            },
+            'XKTQb': _0x286ab3(0x1e2)
+        }, _0x343b93 = document[_0x286ab3(0x1fa) + _0x286ab3(0x215)](_0x14e6a4[_0x286ab3(0x21a)])[_0x286ab3(0x1ea)];
+    const _0x574584 = _0x286ab3(0x21e) + _0x286ab3(0x223) + _0x286ab3(0x1d1) + _0x286ab3(0x1cc) + _0x286ab3(0x1e7) + _0x286ab3(0x1db) + _0x286ab3(0x1d2) + _0x343b93 + _0x286ab3(0x20a) + apikey, _0x1a9267 = await _0x14e6a4[_0x286ab3(0x1c9)](fetch, _0x574584);
+    if (_0x14e6a4[_0x286ab3(0x1ec)](_0x1a9267[_0x286ab3(0x1c4)], 0x23a7 * -0x1 + -0x9d3 * -0x3 + 0x7c2))
+        document[_0x286ab3(0x209) + _0x286ab3(0x1f4)](_0x14e6a4[_0x286ab3(0x1f7)])[_0x286ab3(0x1c6)][_0x286ab3(0x1eb)] = _0x14e6a4[_0x286ab3(0x1c8)], document[_0x286ab3(0x209) + _0x286ab3(0x1f4)](_0x14e6a4[_0x286ab3(0x20c)])[_0x286ab3(0x1c6)][_0x286ab3(0x1eb)] = _0x14e6a4[_0x286ab3(0x1fd)];
+    else {
+        var _0xb2fd24 = await _0x1a9267[_0x286ab3(0x205)]();
+        if (_0x14e6a4[_0x286ab3(0x1ec)](_0xb2fd24[_0x286ab3(0x20f)][-0xfbf * -0x2 + 0x2277 + -0x41f5][_0x286ab3(0x1df)], _0x14e6a4[_0x286ab3(0x200)]))
+            WeatherIcon[_0x286ab3(0x1d3)] = _0x14e6a4[_0x286ab3(0x1f0)];
+        else {
+            if (_0x14e6a4[_0x286ab3(0x1ec)](_0xb2fd24[_0x286ab3(0x20f)][0x10cf + 0x1bfd + -0x2ccc][_0x286ab3(0x1df)], _0x14e6a4[_0x286ab3(0x213)]))
+                WeatherIcon[_0x286ab3(0x1d3)] = _0x14e6a4[_0x286ab3(0x1de)];
+            else {
+                if (_0x14e6a4[_0x286ab3(0x1ec)](_0xb2fd24[_0x286ab3(0x20f)][-0x2348 + -0x2 * -0x923 + -0x137 * -0xe][_0x286ab3(0x1df)], _0x14e6a4[_0x286ab3(0x1d6)]))
+                    WeatherIcon[_0x286ab3(0x1d3)] = _0x14e6a4[_0x286ab3(0x1d9)];
+                else {
+                    if (_0x14e6a4[_0x286ab3(0x1ec)](_0xb2fd24[_0x286ab3(0x20f)][-0x1748 + -0x1d * 0xb2 + -0x2b72 * -0x1][_0x286ab3(0x1df)], _0x14e6a4[_0x286ab3(0x1f2)]))
+                        WeatherIcon[_0x286ab3(0x1d3)] = _0x14e6a4[_0x286ab3(0x206)];
+                    else
+                        _0x14e6a4[_0x286ab3(0x1f3)](_0xb2fd24[_0x286ab3(0x20f)][-0x22c6 + 0x6bd + -0x1 * -0x1c09][_0x286ab3(0x1df)], _0x14e6a4[_0x286ab3(0x1dd)]) && (WeatherIcon[_0x286ab3(0x1d3)] = _0x14e6a4[_0x286ab3(0x218)]);
+                }
+            }
+        }
+        document[_0x286ab3(0x209) + _0x286ab3(0x1f4)](_0x14e6a4[_0x286ab3(0x20c)])[_0x286ab3(0x1c6)][_0x286ab3(0x1eb)] = _0x14e6a4[_0x286ab3(0x1c8)], document[_0x286ab3(0x209) + _0x286ab3(0x1f4)](_0x14e6a4[_0x286ab3(0x1f7)])[_0x286ab3(0x1c6)][_0x286ab3(0x1eb)] = _0x14e6a4[_0x286ab3(0x1fd)];
     }
-    else if(data.weather[0].main == "Clear"){
-      WeatherIcon.src="images/clear.png";
-    }
-    else if(data.weather[0].main == "Rain"){
-      WeatherIcon.src="images/rain.png";
-    }
-    else if(data.weather[0].main == "Drizzle"){
-      WeatherIcon.src="images/drizzle.png";
-    }
-    else if(data.weather[0].main == "Mist"){
-      WeatherIcon.src="images/mist.png";
-    }
-    
-    document.querySelector(".weather").style.display = "block";
-    document.querySelector(".error").style.display = "none";
-
-  }
-
-  var Wind = document.getElementById("Wind");
-  var humidity = document.getElementById("humidity");
-  var heading = document.getElementById("heading");
-  temperature.innerHTML = Math.round(data.main.temp) + "°c";
-  heading.innerHTML = data.name;
-  Wind.innerHTML=data.wind.speed + " Km/h";
-  humidity.innerHTML=data.main.humidity + "%";
-
-
-  // Add "Enter" key event listener to trigger the search
-  document.getElementById("input").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-      checkWeather(); // Call checkWeather when "Enter" is pressed
-    }
-  });
-
+    var _0x4a64e5 = document[_0x286ab3(0x1fa) + _0x286ab3(0x215)](_0x14e6a4[_0x286ab3(0x216)]), _0x2770dd = document[_0x286ab3(0x1fa) + _0x286ab3(0x215)](_0x14e6a4[_0x286ab3(0x221)]), _0x3b0fd7 = document[_0x286ab3(0x1fa) + _0x286ab3(0x215)](_0x14e6a4[_0x286ab3(0x1fe)]);
+    temperature[_0x286ab3(0x1cd)] = _0x14e6a4[_0x286ab3(0x21b)](Math[_0x286ab3(0x204)](_0xb2fd24[_0x286ab3(0x1df)][_0x286ab3(0x1f9)]), '°c'), _0x3b0fd7[_0x286ab3(0x1cd)] = _0xb2fd24[_0x286ab3(0x217)], _0x4a64e5[_0x286ab3(0x1cd)] = _0x14e6a4[_0x286ab3(0x21b)](_0xb2fd24[_0x286ab3(0x1ef)][_0x286ab3(0x1cb)], _0x14e6a4[_0x286ab3(0x202)]), _0x2770dd[_0x286ab3(0x1cd)] = _0x14e6a4[_0x286ab3(0x203)](_0xb2fd24[_0x286ab3(0x1df)][_0x286ab3(0x1e3)], '%'), document[_0x286ab3(0x1fa) + _0x286ab3(0x215)](_0x14e6a4[_0x286ab3(0x21a)])[_0x286ab3(0x1d4) + _0x286ab3(0x1f5)](_0x14e6a4[_0x286ab3(0x21f)], function (_0x12d228) {
+        var _0x20fdf4 = _0x286ab3;
+        _0x14e6a4[_0x20fdf4(0x1e0)](_0x12d228[_0x20fdf4(0x1e1)], _0x14e6a4[_0x20fdf4(0x1d8)]) && _0x14e6a4[_0x20fdf4(0x1f6)](checkWeather);
+    });
 }
